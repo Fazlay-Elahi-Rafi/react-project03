@@ -1,0 +1,99 @@
+.chose{
+
+    //Card img top
+    
+    &__details{
+        &:hover .img-one{
+            transform: scale(1.1);
+        }  
+        &:hover .img-two{
+            transform: scale(1.1);
+        }  
+    }
+    &__img{
+        position: relative;
+        width: 100%;
+        height: 20em;
+        overflow: hidden;
+            .img-one{
+                background-image: url(../../img/img-20.jpg);
+                background-repeat: no-repeat;
+                background-position: 0 0;
+                background-size: cover;
+                height: 100%;
+                width: 100%;
+                transition: all .5s;
+            }
+            .img-two{
+                background-image: url(../../img/img-21.jpg);
+                background-repeat: no-repeat;
+                background-position: 0 0;
+                background-size: cover;
+                height: 100%;
+                width: 100%;
+                transition: all .5s;
+            }
+    }
+
+    // Card img bottom
+
+    &__text2{
+        margin: 0 0 2.1em 0;
+        &:hover .img__one{
+            transform: scale(1.1);
+        } 
+        &:hover .img__two{
+            transform: scale(1.1);
+        } 
+        &:hover .img__three{
+            transform: scale(1.1);
+        } 
+        &:hover .img__four{
+            transform: scale(1.1);
+        } 
+        &:hover .chose__body-title{
+            color: $primary;
+        } 
+    } 
+    &__img2{
+        position: relative;
+        height: 9em;
+        overflow: hidden;
+            .img__one{
+                background-image: url(../../img/img-26.jpg);
+                background-repeat: no-repeat;
+                background-position: 0 0;
+                background-size: cover;
+                height: 100%;
+                width: 100%;
+                transition: all .5s;
+            }
+            .img__two{
+                background-image: url(../../img/img-28.jpg);
+                background-repeat: no-repeat;
+                background-position: 0 0;
+                background-size: cover;
+                height: 100%;
+                width: 100%;
+                transition: all .5s;
+            }
+            .img__three{
+                background-image: url(../../img/img-29.jpg);
+                background-repeat: no-repeat;
+                background-position: 0 0;
+                background-size: cover;
+                height: 100%;
+                width: 100%;
+                transition: all .5s;
+            }
+            .img__four{
+                background-image: url(../../img/img-30.jpg);
+                background-repeat: no-repeat;
+                background-position: 0 0;
+                background-size: cover;
+                height: 100%;
+                width: 100%;
+                transition: all .5s;
+            }
+    }
+}

@@ -1,0 +1,438 @@
+.update{
+
+    // img2 & img3 Hover Effect
+
+    &__text2{
+        margin: 0 0 1.5em 0;
+        display: inline-flex; 
+        &:hover .update__img2 .img-one{
+            transform: scale(1.1);
+        }     
+        &:hover .update__img2 .img-two{
+            transform: scale(1.1);
+        }     
+        &:hover .update__img2 .img-three{
+            transform: scale(1.1);
+        }          
+        &:hover .update__img2 .img-four{
+            transform: scale(1.1);
+        }     
+        &:hover .update__img2 .img-five{
+            transform: scale(1.1);
+        }     
+        &:hover .update__img2 .img-six{
+            transform: scale(1.1);
+        }          
+        &:hover .update__img2 .img-saven{
+            transform: scale(1.1);
+        }     
+        &:hover .update__img2 .img-eight{
+            transform: scale(1.1);
+        }     
+        &:hover .update__img2 .img-nine{
+            transform: scale(1.1);
+        }          
+        &:hover .update__img2 .img-ten{
+            transform: scale(1.1);
+        }     
+        &:hover .update__img2 .img-eleven{
+            transform: scale(1.1);
+        }     
+        &:hover .update__img2 .img-twelve{
+            transform: scale(1.1);
+        }        
+        
+        
+        &:hover .update__img3 .img-one{
+            transform: scale(1.1);
+        }     
+        &:hover .update__img3 .img-two{
+            transform: scale(1.1);
+        }     
+        &:hover .update__img3 .img-three{
+            transform: scale(1.1);
+        }          
+        &:hover .update__img3 .img-four{
+            transform: scale(1.1);
+        }     
+        &:hover .update__img3 .img-five{
+            transform: scale(1.1);
+        }     
+        &:hover .update__img3 .img-six{
+            transform: scale(1.1);
+        }          
+        &:hover .update__img3 .img-saven{
+            transform: scale(1.1);
+        }     
+        &:hover .update__img3 .img-eight{
+            transform: scale(1.1);
+        }     
+        &:hover .update__img3 .img-nine{
+            transform: scale(1.1);
+        }          
+        &:hover .update__img3 .img-ten{
+            transform: scale(1.1);
+        }     
+        &:hover .update__img3 .img-eleven{
+            transform: scale(1.1);
+        }     
+        &:hover .update__img3 .img-twelve{
+            transform: scale(1.1);
+        }          
+    }
+
+    // Left Silde img
+
+    &__img2{
+        position: relative;
+        width: 14em;
+        height: 9em;
+        margin: 0 0 1.2em -3em;
+        overflow: hidden;
+
+        // max-width: 320px;
+        @include xxs-screen{
+            width: 10em !important;
+            height: 9em !important;
+        };
+
+        // max-width: 575px;
+        @include xs-screen{
+            width: 10em;
+            height: 9em;
+        };
+
+        // min-width: 568px;
+        @include iphn-screen{
+            width: 20em;
+            height: 12em;
+        };
+
+        // min-width: 768px;
+        @include md-screen{
+            width: 24em;
+            height: 12em;
+        };
+
+        // min-width: 992px;
+        @include lg-screen{
+            width: 12em;
+            height: 9em;
+        };
+            .img-one{
+                background-image: url(../../img/img-27.jpg);
+                background-repeat: no-repeat;
+                background-position: 0 0;
+                background-size: cover;
+                height: 100%;
+                width: 100%;
+                transition: all .5s;
+            }
+            .img-two{
+                background-image: url(../../img/img-28.jpg);
+                background-repeat: no-repeat;
+                background-position: 0 0;
+                background-size: cover;
+                height: 100%;
+                width: 100%;
+                transition: all .5s;
+            }
+            .img-three{
+                background-image: url(../../img/img-30.jpg);
+                background-repeat: no-repeat;
+                background-position: 0 0;
+                background-size: cover;
+                height: 100%;
+                width: 100%;
+                transition: all .5s;
+            }
+            .img-four{
+                background-image: url(../../img/img-29.jpg);
+                background-repeat: no-repeat;
+                background-position: 0 0;
+                background-size: cover;
+                height: 100%;
+                width: 100%;
+                transition: all .5s;
+            }
+            .img-five{
+                background-image: url(../../img/img-31.jpg);
+                background-repeat: no-repeat;
+                background-position: 0 0;
+                background-size: cover;
+                height: 100%;
+                width: 100%;
+                transition: all .5s;
+            }
+            .img-six{
+                background-image: url(../../img/img-32.jpg);
+                background-repeat: no-repeat;
+                background-position: 0 0;
+                background-size: cover;
+                height: 100%;
+                width: 100%;
+                transition: all .5s;
+            }
+            .img-saven{
+                background-image: url(../../img/img-33.jpg);
+                background-repeat: no-repeat;
+                background-position: 0 0;
+                background-size: cover;
+                height: 100%;
+                width: 100%;
+                transition: all .5s;
+            }
+            .img-eight{
+                background-image: url(../../img/img-34.jpg);
+                background-repeat: no-repeat;
+                background-position: 0 0;
+                background-size: cover;
+                height: 100%;
+                width: 100%;
+                transition: all .5s;
+            }
+            .img-nine{
+                background-image: url(../../img/img-35.jpg);
+                background-repeat: no-repeat;
+                background-position: 0 0;
+                background-size: cover;
+                height: 100%;
+                width: 100%;
+                transition: all .5s;
+            }
+            .img-ten{
+                background-image: url(../../img/img-36.jpg);
+                background-repeat: no-repeat;
+                background-position: 0 0;
+                background-size: cover;
+                height: 100%;
+                width: 100%;
+                transition: all .5s;
+            }
+            .img-eleven{
+                background-image: url(../../img/img-37.jpg);
+                background-repeat: no-repeat;
+                background-position: 0 0;
+                background-size: cover;
+                height: 100%;
+                width: 100%;
+                transition: all .5s;
+            }
+            .img-twelve{
+                background-image: url(../../img/img-38.jpg);
+                background-repeat: no-repeat;
+                background-position: 0 0;
+                background-size: cover;
+                height: 100%;
+                width: 100%;
+                transition: all .5s;
+            }
+    }
+
+    // Middle img & Hover Effect
+
+    &__details{
+        &:hover .img-one{
+            transform: scale(1.1);
+        }  
+        &:hover .img-two{
+            transform: scale(1.1);
+        }  
+        &:hover .img-three{
+            transform: scale(1.1);
+        }  
+        &:hover .img-four{
+            transform: scale(1.1);
+        }  
+    }
+    &__img{
+        position: relative;
+        width: 100%;
+        height: 32.55em;
+        overflow: hidden;
+            .img-one{
+                background-image: url(../../img/img-22.jpg);
+                background-repeat: no-repeat;
+                background-position: 0 0;
+                background-size: cover;
+                height: 100%;
+                width: 100%;
+                transition: all .5s;
+            }
+            .img-two{
+                background-image: url(../../img/img-52.jpg);
+                background-repeat: no-repeat;
+                background-position: 0 0;
+                background-size: cover;
+                height: 100%;
+                width: 100%;
+                transition: all .5s;
+            }
+            .img-three{
+                background-image: url(../../img/img-24.jpg);
+                background-repeat: no-repeat;
+                background-position: 0 0;
+                background-size: cover;
+                height: 100%;
+                width: 100%;
+                transition: all .5s;
+            }
+            .img-four{
+                background-image: url(../../img/img-25.jpg);
+                background-repeat: no-repeat;
+                background-position: 0 0;
+                background-size: cover;
+                height: 100%;
+                width: 100%;
+                transition: all .5s;
+            }
+    }
+
+    // Right Side img
+
+    &__img3{
+        position: relative;
+        width: 14em;
+        height: 9em;
+        margin: 0 0 1.2em 0;
+        overflow: hidden;
+
+        // max-width: 320px;
+        @include xxs-screen{
+            width: 10em !important;
+            height: 9em !important;
+        };
+
+        // max-width: 575px;
+        @include xs-screen{
+            width: 10em;
+            height: 9em;
+        };
+
+        // min-width: 568px;
+        @include iphn-screen{
+            width: 20em;
+            height: 12em;
+        };
+
+        // min-width: 768px;
+        @include md-screen{
+            width: 24em;
+            height: 12em;
+        };
+
+        // min-width: 992px;
+        @include lg-screen{
+            width: 12em;
+            height: 9em;
+        };
+            .img-one{
+                background-image: url(../../img/img-28.jpg);
+                background-repeat: no-repeat;
+                background-position: 0 0;
+                background-size: cover;
+                height: 100%;
+                width: 100%;
+                transition: all .5s;
+            }
+            .img-two{
+                background-image: url(../../img/img-29.jpg);
+                background-repeat: no-repeat;
+                background-position: 0 0;
+                background-size: cover;
+                height: 100%;
+                width: 100%;
+                transition: all .5s;
+            }
+            .img-three{
+                background-image: url(../../img/img-30.jpg);
+                background-repeat: no-repeat;
+                background-position: 0 0;
+                background-size: cover;
+                height: 100%;
+                width: 100%;
+                transition: all .5s;
+            }
+            .img-four{
+                background-image: url(../../img/img-27.jpg);
+                background-repeat: no-repeat;
+                background-position: 0 0;
+                background-size: cover;
+                height: 100%;
+                width: 100%;
+                transition: all .5s;
+            }
+            .img-five{
+                background-image: url(../../img/img-28.jpg);
+                background-repeat: no-repeat;
+                background-position: 0 0;
+                background-size: cover;
+                height: 100%;
+                width: 100%;
+                transition: all .5s;
+            }
+            .img-six{
+                background-image: url(../../img/img-30.jpg);
+                background-repeat: no-repeat;
+                background-position: 0 0;
+                background-size: cover;
+                height: 100%;
+                width: 100%;
+                transition: all .5s;
+            }
+            .img-saven{
+                background-image: url(../../img/img-40.jpg);
+                background-repeat: no-repeat;
+                background-position: 0 0;
+                background-size: cover;
+                height: 100%;
+                width: 100%;
+                transition: all .5s;
+            }
+            .img-eight{
+                background-image: url(../../img/img-41.jpg);
+                background-repeat: no-repeat;
+                background-position: 0 0;
+                background-size: cover;
+                height: 100%;
+                width: 100%;
+                transition: all .5s;
+            }
+            .img-nine{
+                background-image: url(../../img/img-42.jpg);
+                background-repeat: no-repeat;
+                background-position: 0 0;
+                background-size: cover;
+                height: 100%;
+                width: 100%;
+                transition: all .5s;
+            }
+            .img-ten{
+                background-image: url(../../img/img-43.jpg);
+                background-repeat: no-repeat;
+                background-position: 0 0;
+                background-size: cover;
+                height: 100%;
+                width: 100%;
+                transition: all .5s;
+            }
+            .img-eleven{
+                background-image: url(../../img/img-44.jpg);
+                background-repeat: no-repeat;
+                background-position: 0 0;
+                background-size: cover;
+                height: 100%;
+                width: 100%;
+                transition: all .5s;
+            }
+            .img-twelve{
+                background-image: url(../../img/img-45.jpg);
+                background-repeat: no-repeat;
+                background-position: 0 0;
+                background-size: cover;
+                height: 100%;
+                width: 100%;
+                transition: all .5s;
+            }
+    } 
+}

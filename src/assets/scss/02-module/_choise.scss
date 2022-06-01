@@ -1,0 +1,108 @@
+@import '../01-base/01-base';
+
+// Img
+@import './choise-img';
+
+// Button
+@import './choise-btn';
+
+.chose{
+    margin: 7.5em 0 10em 0; 
+    &__header{
+        margin: 0 0 -8px -4px;
+        width: 12em;
+        text-align: center;
+        transform: skewX(10deg);
+            h3{
+                font-family: $heading-font;
+                color: #fff;
+                background: $beta;
+                padding: 0.3em 0em;
+
+                // max-width: 575px;
+                @include xs-screen{
+                    font-size: 1em;
+                };
+            }
+
+        // max-width: 575px;
+        @include xs-screen{
+            width: 6em;
+        };
+    }
+    &__border{
+        border-bottom: 1px solid rgba(217, 217, 217, 0.4);
+    }
+    .card-img-overlay{
+        background: linear-gradient(transparent, $black);
+        border-radius: 0;
+        margin: 2em 0 0 0;
+    }
+    &__text{
+        margin: 9em 0 0.5em 0;
+        span{
+            margin: 0 0;
+            cursor: pointer;
+            text-transform: capitalize;
+            font-size: 0.8em;
+            color: $white;
+        }
+        &-link{
+            margin: 0 0;
+            text-decoration: none !important;
+            color: $white !important;
+            font-family: $heading-font;
+            font-size: 1.1em;
+
+            // min-width: 568px;
+            @include iphn-screen{
+                font-size: 1.3em;
+            };
+
+            // min-width: 992px;
+            @include lg-screen{
+                font-size: 1.5em;
+            };
+
+            // min-width: 1200px;
+            @include xl-screen{
+                font-size: 1.8em;
+            };
+        }
+    }
+    &__body{
+        &-title{
+            display: inline;
+            color: $secondary;
+            text-decoration: none !important;
+            font-size: 1.3em;
+            font-family: $heading-font;
+
+            // max-width: 575px;
+            @include xs-screen{
+                font-size: 1rem;
+            }; 
+
+            // min-width: 568px;
+            @include iphn-screen{
+                font-size: 1.3em;
+            };
+
+            // min-width: 992px;
+            @include lg-screen{
+                font-size: 1em;
+            }; 
+
+            // min-width: 1200px;
+            @include xl-screen{
+                font-size: 1.3em;
+            }; 
+        }
+        .date_time{
+            display: inline-block;
+        }
+    }
+    .card{
+        border: none;
+    }
+}

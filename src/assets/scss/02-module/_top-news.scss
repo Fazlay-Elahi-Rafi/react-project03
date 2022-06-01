@@ -1,0 +1,263 @@
+@import '../01-base/01-base';
+
+.topnews{
+    margin: 0 0 10em 0;
+    padding: 8em 0 6em 0;
+    background: $top-bg;
+    overflow: hidden;
+    &__header{
+        margin: 0 0 -7px -4px;
+        width: 12em;
+        text-align: center;
+        transform: skewX(10deg);
+
+        // max-width: 575px;
+        @include xs-screen{
+            width: 6em;
+        };
+        h3{
+            font-family: $heading-font;
+            color: $white;
+            background: $alpha;
+            padding: 0.3em 0em;
+
+            // max-width: 575px;
+            @include xs-screen{
+                font-size: 1em;
+            };
+        }
+    }
+    &__border{
+        border-bottom: 1px solid $white;
+    }
+    &__body{
+        margin: 0 0;
+        a{
+            margin: 0 0;
+            color: $white;
+            text-decoration: none;
+            font-size: 1.3em;
+            font-family: $heading-font;
+            transform: all 0.5s ease-in;
+                &:focus{
+                    outline: none;
+                }
+        }
+    }
+    .date_time{
+        .icon{
+            color: $white;
+            cursor: pointer;
+        }
+        span{
+            cursor: pointer;
+            margin: 0 0 0 3px;
+            color: $white;
+            font-weight: 500;
+            text-transform: capitalize;
+        }
+    }
+    .btn{
+        margin: 0.5em 0 0 0;
+        padding: 0 0;
+        a{
+            color: white;
+            background: $alpha;
+            border-radius: 0;
+            padding: 0.3em 1em;
+            font-size: 0.7em;
+            letter-spacing: 1px;
+            transform: skewX(-12deg);
+            transition: all 0.8s ease;
+                &:hover{
+                    transition: all 0.8s ease;
+                    background: $gamma;
+                }
+                &:focus{
+                    box-shadow: none;
+                }
+        }
+    }
+    .btn-two{
+        margin: 0.5em 0 0 0;
+        padding: 0 0;
+        a{
+            color: white;
+            background: $beta;
+            border-radius: 0;
+            padding: 0.3em 1em;
+            font-size: 0.7em;
+            letter-spacing: 1px;
+            transform: skewX(-12deg);
+            transition: all 0.8s ease;
+                &:hover{
+                    transition: all 0.8s ease;
+                    background: $alpha;
+                }
+                &:focus{
+                    box-shadow: none;
+                }
+        }
+    }
+    .btn-three{
+        margin: 0.5em 0 0 0;
+        padding: 0 0;
+        a{
+            color: white;
+            background: $gamma;
+            border-radius: 0;
+            padding: 0.3em 1em;
+            font-size: 0.7em;
+            letter-spacing: 1px;
+            transform: skewX(-12deg);
+            transition: all 0.8s ease;
+                &:hover{
+                    transition: all 0.8s ease;
+                    background: $beta;
+                }
+                &:focus{
+                    box-shadow: none;
+                }
+        }
+    }
+    .btn-four{
+        margin: 0.5em 0 0 0;
+        padding: 0 0;
+        a{
+            color: white;
+            background: $delta;
+            border-radius: 0;
+            padding: 0.3em 1em;
+            font-size: 0.7em;
+            letter-spacing: 1px;
+            transform: skewX(-12deg);
+            transition: all 0.8s ease;
+                &:hover{
+                    transition: all 0.8s ease;
+                    background: $alpha;
+                }
+                &:focus{
+                    box-shadow: none;
+                }
+        }
+    }
+    &__text{
+        &:hover img{
+            -webkit-transform: scale(1.1);
+            transform: scale(1.2);
+        }
+        &:hover .topnews__body a{
+            color: $gamma;
+            transform: all 0.5s ease-in;
+        }
+    }
+    .news_img{
+        position: relative;
+        overflow: hidden;
+            img{
+                -webkit-transition: all 0.3s ease;
+                transition: all 0.5s ease;
+            }
+    }
+    .slick-prev{
+        position: absolute;
+        top: -26.1%;
+        transform: skewX(10deg);
+        left: 91%;
+        cursor: pointer;
+        // font-size: 1em;
+        color: transparent;
+        // background: $alpha;
+        padding: 0.5em 0.7em;
+
+
+        // max-width: 575px;
+        @include xs-screen{
+            display: none !important;
+        };
+        
+        // min-width: 568px;
+        @include iphn-screen{
+            left: 80%;
+            top: -15%;
+        };
+
+        // min-width: 768px;
+        @include md-screen{
+            display: block !important;
+            left: 86%;
+            top: -25%;
+        };
+
+        // min-width: 992px;
+        @include lg-screen{
+            left: 90%;
+        };
+
+        // min-width: 1200px;
+        @include xl-screen{
+            left: 90%;
+            top: -22%;
+        };
+
+    }
+    .slick-next{
+        position: absolute;
+        top: -26.1%;
+        transform: skewX(10deg);
+        left: 96.5%;
+        cursor: pointer;
+        color: transparent;
+        padding: 0.5em 0.7em;
+
+        // max-width: 575px;
+        @include xs-screen{
+            display: none !important;
+        };
+        
+        // min-width: 568px;
+        @include iphn-screen{
+            left: 90%;
+            top: -15%;
+        };
+
+        // // min-width: 768px;
+        @include md-screen{
+            left: 92.4%;
+            top: -25%;
+            display: block !important;
+        };
+
+        // min-width: 992px;
+        @include lg-screen{
+            left: 94.4%;
+        };
+
+        // min-width: 1200px;
+        @include xl-screen{
+            left: 95%;
+            top: -22%;
+        };
+    }
+    .slick-dots li button:before{
+        
+        // max-width: 575px;
+        @include xs-screen{
+            color: white;
+            font-size: 1rem !important;
+            margin: 1rem 0 0 0;
+        };
+        
+        // min-width: 576px;
+        @include sm-screen{
+            display: none !important;
+        };
+    }
+}
+.slick-slide{
+    margin: 0 0;
+    &:focus{
+        border: none !important;
+        outline: none;
+    }
+}

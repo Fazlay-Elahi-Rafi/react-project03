@@ -1,0 +1,137 @@
+.recent{
+
+    // Slider img & details
+    
+    // &__details{
+    //     &:hover .img-one{
+    //         transform: scale(1.1);
+    //     }   
+    //     &:hover .img-two{
+    //         transform: scale(1.1);
+    //     }   
+    //     &:hover .img-three{
+    //         transform: scale(1.1);
+    //     }   
+    // }
+    &__img{
+        position: relative;
+        width: 100%;
+        height: 34em;
+        overflow: hidden;
+
+        // max-width: 575px;
+        @include xs-screen{
+            height: 20em;
+        }; 
+
+        // min-width: 568px;
+        @include iphn-screen{
+            height: 20em;
+        }; 
+
+        // min-width: 768px;
+        @include md-screen{
+            height: 25.7em;
+        }; 
+
+        // min-width: 992px;
+        @include lg-screen{
+            height: 34em;
+        }; 
+            .img-one{
+                background-image: url(../../img/img-79.jpg);
+                background-repeat: no-repeat;
+                background-position: 0 0;
+                background-size: cover;
+                height: 100%;
+                width: 100%;
+                transition: all .5s;
+            }
+            .img-two{
+                background-image: url(../../img/img-80.jpg);
+                background-repeat: no-repeat;
+                background-position: 0 0;
+                background-size: cover;
+                height: 100%;
+                width: 100%;
+                transition: all .5s;
+            }
+            .img-three{
+                background-image: url(../../img/img-81.jpg);
+                background-repeat: no-repeat;
+                background-position: 0 0;
+                background-size: cover;
+                height: 100%;
+                width: 100%;
+                transition: all .5s;
+            }
+       
+    }
+
+
+
+    // Card img
+
+    &__text2{
+        margin: 0 0 2.1em 0;
+        &:hover .img__one{
+            transform: scale(1.1);
+        } 
+        &:hover .img__two{
+            transform: scale(1.1);
+        } 
+        &:hover .img__three{
+            transform: scale(1.1);
+        } 
+        &:hover .chose__body-title{
+            color: $primary;
+        } 
+    } 
+    &__img2{
+        position: relative;
+        height: 9em;
+        overflow: hidden;
+
+        // max-width: 575px;
+        @include xs-screen{
+            height: 5em;
+        };
+
+        // min-width: 768px;
+        @include md-screen{
+            height: 6em;
+        };
+
+        // min-width: 992px;
+        @include lg-screen{
+            height: 9em;
+        };
+            .img__one{
+                background-image: url(../../img/img-62.jpg);
+                background-repeat: no-repeat;
+                background-position: 0 0;
+                background-size: cover;
+                height: 100%;
+                width: 100%;
+                transition: all .5s;
+            }
+            .img__two{
+                background-image: url(../../img/img-60.jpg);
+                background-repeat: no-repeat;
+                background-position: 0 0;
+                background-size: cover;
+                height: 100%;
+                width: 100%;
+                transition: all .5s;
+            }
+            .img__three{
+                background-image: url(../../img/img-61.jpg);
+                background-repeat: no-repeat;
+                background-position: 0 0;
+                background-size: cover;
+                height: 100%;
+                width: 100%;
+                transition: all .5s;
+            }
+    }
+}

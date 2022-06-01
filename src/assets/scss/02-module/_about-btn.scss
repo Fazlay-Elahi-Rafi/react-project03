@@ -1,0 +1,163 @@
+.about{
+
+    // Left & Right button
+
+    &__text{
+        .btn_one{
+            margin: 0 1.3em 0 0;
+            color: $white;
+            background: $alpha;
+            border-radius: 0;
+            padding: 0.2em 0.5em 0.3em 0.5em;
+            font-size: 0.7em;
+            letter-spacing: 1px;
+            transform: skewX(-12deg);
+            transition: all 0.8s ease;
+
+            // min-width: 992px;
+            @include lg-screen{
+                margin: 0 0 0 0;
+            };
+
+            // min-width: 1200px;
+            @include xl-screen{
+                margin: 0 1.3em 0 0;
+            };
+                &:hover{
+                    transition: all 0.8s ease;
+                    background: $gamma;
+                }
+                &:focus{
+                    outline: none;
+                    box-shadow: none;
+                }
+        }
+        .btn_two{
+            margin: 0 1.3em 0 0;
+            color: $white;
+            background: $gamma;
+            border-radius: 0;
+            padding: 0.2em 0.5em 0.3em 0.5em;
+            font-size: 0.7em;
+            letter-spacing: 1px;
+            transform: skewX(-12deg);
+            transition: all 0.8s ease;
+
+            // min-width: 992px;
+            @include lg-screen{
+                margin: 0 0 0 0;
+            };
+
+            // min-width: 1200px;
+            @include xl-screen{
+                margin: 0 1.3em 0 0;
+            };
+                &:hover{
+                    transition: all 0.8s ease;
+                    background: $beta;
+                }
+                &:focus{
+                    outline: none;
+                    box-shadow: none;
+                }
+        }
+        .btn_three{
+            margin: 0 1.3em 0 0;
+            color: $white;
+            background: $beta;
+            border-radius: 0;
+            padding: 0.2em 0.5em 0.3em 0.5em;
+            font-size: 0.7em;
+            letter-spacing: 1px;
+            transform: skewX(-12deg);
+            transition: all 0.8s ease;
+
+            // min-width: 992px;
+            @include lg-screen{
+                margin: 0 0 0 0;
+            };
+
+            // min-width: 1200px;
+            @include xl-screen{
+                margin: 0 1.3em 0 0;
+            };
+                &:hover{
+                    transition: all 0.8s ease;
+                    background: $alpha;
+                }
+                &:focus{
+                    outline: none;
+                    box-shadow: none;
+                }
+        }
+    }
+
+    // Slider Button
+
+    &__text2{
+        .btns{
+            margin: 0 1.3em 0 0;
+            color: $white;
+            background: $alpha;
+            border-radius: 0;
+            padding: 0.2em 0.5em 0.3em 0.5em;
+            font-size: 0.7em;
+            letter-spacing: 1px;
+            transform: skewX(-12deg);
+            transition: all 0.8s ease;
+
+            // max-width: 575px;
+            @include xs-screen{
+                margin: 0 0.3em 0 0;
+            };
+                &:hover{
+                    transition: all 0.7s ease;
+                    background: $gamma;
+                }
+                &:focus{
+                    outline: none;
+                    box-shadow: none;
+                }
+            &-two{
+                margin: 0 1.3em 0 0;
+                color: $white;
+                background: $gamma;
+                border-radius: 0;
+                padding: 0.2em 0.5em 0.3em 0.5em;
+                font-size: 0.7em;
+                letter-spacing: 1px;
+                transform: skewX(-12deg);
+                transition: all 0.8s ease;
+
+                // max-width: 575px;
+                @include xs-screen{
+                    margin: 0 0.3em 0 0;
+                };
+                    &:hover{
+                        transition: all 0.7s ease;
+                        background: $beta;
+                    }
+            }
+            &-three{
+                margin: 0 1.3em 0 0;
+                color: $white;
+                background: $beta;
+                border-radius: 0;
+                padding: 0.2em 0.5em 0.3em 0.5em;
+                font-size: 0.7em;
+                letter-spacing: 1px;
+                transform: skewX(-12deg);
+                transition: all 0.8s ease;
+
+                // max-width: 575px;
+                @include xs-screen{
+                    margin: 0 0.3em 0 0;
+                };
+                    &:hover{
+                        transition: all 0.7s ease;
+                        background: $alpha;
+                    }
+            }
+        }
+    }
+}

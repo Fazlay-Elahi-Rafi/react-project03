@@ -1,0 +1,123 @@
+@import '../01-base/01-base';
+
+.nav{
+    background: $heading-text;
+
+    // max-width: 575px;
+    @include xs-screen{
+        background: none;
+    };
+
+    // min-width: 568px;
+    @include iphn-screen{
+        background: none;
+    };
+
+    // min-width: 768px;
+    @include md-screen{
+        background: $heading-text;
+        position: relative;
+        z-index: 1;
+    };
+    .drop-bg{
+        box-shadow: -2px 2px 22px rgba(0, 0, 0, 0.3);
+        margin: 0.5em 0 0 -2em;
+        position: absolute;
+        a{
+            text-align: center;
+            padding: 0.8em 0;
+            margin: -8px 0 -8px 0px;
+            letter-spacing: 1.5px;
+            color: $black !important;
+            border-bottom: 1px solid $light;
+            &:hover{
+                background: $alpha;
+                color: $white !important;
+            }
+            &:last-child{
+                border-bottom: none;
+            }
+        }
+    }
+    &__link{
+
+        // max-width: 575px;
+        @include xs-screen{
+            background: $heading-text;
+            padding: 2em 0 2.5em 1.5em;
+            margin: 0 0 -15em 0;
+            transform: translate(-1em, 0);
+        };
+        
+        // min-width: 568px;
+        @include iphn-screen{
+            background: $heading-text;
+            padding: 2em 0 2.5em 1.5em;
+            margin: 0 0 -15em 0;
+            transform: translate(-1em, 0);
+        };
+        
+        // min-width: 768px;
+        @include md-screen{
+            background: none;
+            padding: 0em 0 0em 0em;
+            margin: 0 0 0em 0;
+            transform: translate(0em, 0);
+        };
+        a{
+            font-weight: 500;
+            color: $white !important;
+            letter-spacing: 1.5px;
+            transition: all 0.3s ease;
+                &:hover{
+                    transition: all 0.3s ease;
+                    color: $alpha !important;
+                }
+        }
+        &-active a{
+            color: $alpha !important;
+        }
+    }
+    &__social{
+        margin: 0 0;
+
+        // max-width: 575px;
+        @include xs-screen{
+            margin: 1.5em 0 -1em 0;
+        };
+
+        // min-width: 568px;
+        @include iphn-screen{
+            margin: 1.5em 0 -1em 0;
+        };
+
+        // min-width: 768px;
+        @include md-screen{
+            margin: 0em 0 0em 0;
+        };
+        &-icon{
+            color: $white;
+            cursor: pointer;
+            transition: all 0.3s ease;
+                &:hover{
+                    transition: all 0.3s ease;
+                    color: $alpha;
+                }
+        }
+    }
+    &__icon{
+        color: $alpha;
+        font-size: 1.5em;
+    }
+    &__btn{
+        border: none;
+        margin: 0 0 0 -0.8em;
+        padding: 0 0;
+            &:focus{
+                outline: none;
+            }
+    }
+    .show{
+        z-index: 1;
+    }
+}

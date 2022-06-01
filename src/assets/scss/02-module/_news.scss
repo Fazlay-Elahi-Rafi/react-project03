@@ -1,0 +1,61 @@
+@import "../01-base/01-base";
+
+.news {
+  margin: 0 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+
+  // max-width: 575px;
+  @include xs-screen {
+    margin: 1em 0 0 0;
+  }
+
+  // min-width: 568px;
+  @include iphn-screen {
+    margin: 1em 0 0 0;
+  }
+
+  // min-width: 768px;
+  @include md-screen {
+    margin: 0em 0 0 0;
+  }
+  &__text {
+    background: $alpha;
+    font-weight: 500;
+    h2 {
+      font-family: $heading-font;
+      padding: 0.57em 0em;
+      text-align: center;
+      color: $white;
+      font-size: 1.8em;
+    }
+  }
+  .text-slide {
+    margin: 0 0 0 -1.87rem;
+
+    // max-width: 575px;
+    @include xs-screen {
+      margin: -8px 0 0 0;
+    }
+
+    // min-width: 568px;
+    @include iphn-screen {
+      margin: -8px 0 0 0;
+    }
+
+    // min-width: 768px;
+    @include md-screen {
+      margin: 0 0 0 -1.87em;
+    }
+  }
+  .ticker {
+    font-size: 1rem;
+    display: flex;
+    background: #213663;
+    height: 4.2em;
+    text-align: center;
+    color: $white;
+  }
+}

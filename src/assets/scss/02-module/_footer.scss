@@ -1,0 +1,114 @@
+@import "../01-base/01-base";
+
+.footer {
+  background: $top-bg;
+  padding: 5rem 0;
+  margin: 8rem 0 0 0;
+  overflow: hidden;
+  &__top {
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid rgba(217, 217, 217, 0.2);
+    padding: 0 0 3rem 0;
+    margin: 0 0 3.5rem 0;
+  }
+  &__logo {
+    width: 210px;
+  }
+  &__links {
+    border-bottom: 1px solid rgba(217, 217, 217, 0.2);
+    padding: 0 0 1.5rem 0;
+  }
+  &__service {
+    &-headphn {
+      color: $primary;
+      font-size: 3.5rem;
+    }
+    &-help {
+      display: inline-block;
+      margin: 0 0 0 1.5rem;
+      .center {
+        color: $primary;
+      }
+      .num {
+        display: block;
+        color: $white;
+        transform: translate(0, 5px);
+      }
+    }
+  }
+  .font-h5 {
+    font-family: $heading-font;
+    font-size: 1.5rem;
+    color: $white;
+    margin: 0 0 1.5rem 0;
+  }
+  &__list {
+    display: block;
+    margin: 0;
+    padding: 0;
+    li {
+      list-style: none;
+      margin: 0.7rem 0;
+    }
+    a {
+      margin: 0 0;
+      text-decoration: none;
+      color: $white;
+    }
+  }
+  p {
+    margin: 0 0 2.15rem 0;
+  }
+  .social {
+    margin: 0;
+    padding: 0;
+    li {
+      list-style: none;
+      margin: 0 0.4rem 0 0;
+      transform: skewX(10deg);
+    }
+    a {
+      text-decoration: none;
+      color: $white;
+      padding: 10px 15px;
+
+      // min-width: 992px;
+      @include lg-screen {
+        padding: 6px 10px;
+      }
+
+      // min-width: 1200px;
+      @include xl-screen {
+        padding: 10px 15px;
+      }
+    }
+    &__icon {
+      transform: skewX(-10deg);
+    }
+    &__fb {
+      background: $fb;
+    }
+    &__tw {
+      background: $tw;
+    }
+    &__ins {
+      background: $ins;
+    }
+    &__be {
+      background: $be;
+    }
+    &__in {
+      background: $in;
+    }
+  }
+  .download {
+    margin: 4rem 0 0 0;
+    li {
+      list-style: none;
+    }
+    a {
+      text-decoration: none;
+    }
+  }
+}

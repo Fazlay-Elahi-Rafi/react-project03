@@ -1,0 +1,197 @@
+.update{
+
+    // Left Side button
+
+    &__body{
+        .btn-one{
+            a{  
+                color: $text;
+                background: $gamma;
+                border-radius: 0;
+                padding: 0.3em 1em;
+                font-size: 0.7em;
+                letter-spacing: 1px;
+                transform: skewX(-12deg);
+                transition: all 0.8s ease;
+                    &:hover{
+                        background: $primary;
+                    }
+                    &:focus{
+                        box-shadow: none;
+                    }
+            }
+        }
+        .btn-two{
+            a{  
+                color: $text;
+                background: $delta;
+                border-radius: 0;
+                padding: 0.3em 1em;
+                font-size: 0.7em;
+                letter-spacing: 1px;
+                transform: skewX(-12deg);
+                transition: all 0.8s ease;
+                    &:hover{
+                        background: $beta;
+                    }
+                    &:focus{
+                        box-shadow: none;
+                    }
+            }
+        }
+        .btn-three{
+            a{  
+                color: $text;
+                background: $zeta;
+                border-radius: 0;
+                padding: 0.3em 1em;
+                font-size: 0.7em;
+                letter-spacing: 1px;
+                transform: skewX(-12deg);
+                transition: all 0.8s ease;
+                    &:hover{
+                        background: $eta;
+                    }
+                    &:focus{
+                        box-shadow: none;
+                    }
+            }
+        }
+    }
+
+    // Middle Side Button
+
+    &__text{
+        .btn-one{
+            margin: 0 1em 0 0;
+            color: $white;
+            background: $alpha;
+            border-radius: 0;
+            padding: 0.2em 0.5em 0.3em 0.5em;
+            font-size: 0.7em;
+            letter-spacing: 1px;
+            transform: skewX(-12deg);
+            transition: all 0.8s ease;
+
+            // min-width: 768px;
+            @include md-screen{
+                margin: 0 1.3em 0 0;
+            };
+                &:hover{
+                    transition: all 0.8s ease;
+                    background: $gamma;
+                }
+                &:focus{
+                    outline: none;
+                    box-shadow: none;
+                }
+        }
+        .btn-two{
+            margin: 0 1em 0 0;
+            color: $white;
+            background: $gamma;
+            border-radius: 0;
+            padding: 0.2em 0.5em 0.3em 0.5em;
+            font-size: 0.7em;
+            letter-spacing: 1px;
+            transform: skewX(-12deg);
+            transition: all 0.8s ease;
+
+            // min-width: 768px;
+            @include md-screen{
+                margin: 0 1.3em 0 0;
+            };
+                &:hover{
+                    transition: all 0.8s ease;
+                    background: $beta;
+                }
+                &:focus{
+                    outline: none;
+                    box-shadow: none;
+                }
+        }  
+        .btn-three{
+            margin: 0 1em 0 0;
+            color: $white;
+            background: $delta;
+            border-radius: 0;
+            padding: 0.2em 0.5em 0.3em 0.5em;
+            font-size: 0.7em;
+            letter-spacing: 1px;
+            transform: skewX(-12deg);
+            transition: all 0.8s ease;
+
+            // min-width: 768px;
+            @include md-screen{
+                margin: 0 1.3em 0 0;
+            };
+                &:hover{
+                    transition: all 0.8s ease;
+                    background: $eta;
+                }
+                &:focus{
+                    outline: none;
+                    box-shadow: none;
+                }
+        }  
+    }
+
+    // Right Side Button
+
+    &__body2{
+        .btn-one{
+            a{  
+                color: $text;
+                background: $gamma;
+                border-radius: 0;
+                padding: 0.3em 1em;
+                font-size: 0.7em;
+                letter-spacing: 1px;
+                transform: skewX(-12deg);
+                transition: all 0.8s ease;
+                    &:hover{
+                        background: $primary;
+                    }
+                    &:focus{
+                        box-shadow: none;
+                    }
+            }
+        }
+        .btn-two{
+            a{  
+                color: $text;
+                background: $delta;
+                border-radius: 0;
+                padding: 0.3em 1em;
+                font-size: 0.7em;
+                letter-spacing: 1px;
+                transform: skewX(-12deg);
+                transition: all 0.8s ease;
+                    &:hover{
+                        background: $beta;
+                    }
+                    &:focus{
+                        box-shadow: none;
+                    }
+            }
+        }
+        .btn-three{
+            a{  
+                color: $text;
+                background: $zeta;
+                border-radius: 0;
+                padding: 0.3em 1em;
+                font-size: 0.7em;
+                letter-spacing: 1px;
+                transform: skewX(-12deg);
+                transition: all 0.8s ease;
+                    &:hover{
+                        background: $eta;
+                    }
+                    &:focus{
+                        box-shadow: none;
+                    }
+            }
+        }
+    }
+}

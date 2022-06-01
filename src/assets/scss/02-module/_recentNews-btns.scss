@@ -1,0 +1,193 @@
+.recent{
+
+    // Slider Button
+
+    &__text{
+        .btn-one{
+            margin: 0 1em 0 0;
+            color: $white;
+            background: $alpha;
+            border-radius: 0;
+            padding: 0.2em 0.5em 0.3em 0.5em;
+            font-size: 0.7em;
+            letter-spacing: 1px;
+            transform: skewX(-12deg);
+            transition: all 0.8s ease;
+
+            // min-width: 768px;
+            @include md-screen{
+                margin: 0 1.3em 0 0;
+            };
+                &:hover{
+                    transition: all 0.8s ease;
+                    background: $gamma;
+                }
+                &:focus{
+                    outline: none;
+                    box-shadow: none;
+                }
+        }
+        .btn-two{
+            margin: 0 1em 0 0;
+            color: $white;
+            background: $beta;
+            border-radius: 0;
+            padding: 0.2em 0.5em 0.3em 0.5em;
+            font-size: 0.7em;
+            letter-spacing: 1px;
+            transform: skewX(-12deg);
+            transition: all 0.8s ease;
+
+            // min-width: 768px;
+            @include md-screen{
+                margin: 0 1.3em 0 0;
+            };
+                &:hover{
+                    transition: all 0.8s ease;
+                    background: $delta;
+                }
+                &:focus{
+                    outline: none;
+                    box-shadow: none;
+                }
+        }
+        .btn-three{
+            margin: 0 1em 0 0;
+            color: $white;
+            background: $zeta;
+            border-radius: 0;
+            padding: 0.2em 0.5em 0.3em 0.5em;
+            font-size: 0.7em;
+            letter-spacing: 1px;
+            transform: skewX(-12deg);
+            transition: all 0.8s ease;
+
+            // min-width: 768px;
+            @include md-screen{
+                margin: 0 1.3em 0 0;
+            };
+                &:hover{
+                    transition: all 0.8s ease;
+                    background: $eta;
+                }
+                &:focus{
+                    outline: none;
+                    box-shadow: none;
+                }
+        }
+    }
+
+
+    // Card button
+
+    &__body{
+        .btn__one{
+            display: inline-block;
+            margin: 0 1em 0 0.3em;
+            a{  
+                color: $text;
+                background: $gamma;
+                border-radius: 0;
+                padding: 0.3em 1em;
+                margin: 0 0;
+                font-size: 0.7em;
+                letter-spacing: 1px;
+                transform: skewX(-12deg);
+                transition: all 0.8s ease;
+                
+                // max-width: 575px;
+                @include xs-screen{
+                    font-size: 0.5em;
+                };
+
+                // min-width: 768px;
+                @include md-screen{
+                    font-size: 0.6em;
+                };
+
+                // min-width: 992px;
+                @include lg-screen{
+                    font-size: 0.7em;
+                };
+                    &:hover{
+                        background: $primary;
+                    }
+                    &:focus{
+                        box-shadow: none;
+                    }
+            }
+        }
+        .btn__two{
+            display: inline-block;
+            margin: 0 1em 0 0.3em;
+            a{  
+                color: $text;
+                background: $delta;
+                border-radius: 0;
+                padding: 0.3em 1em;
+                margin: 0 0;
+                font-size: 0.7em;
+                letter-spacing: 1px;
+                transform: skewX(-12deg);
+                transition: all 0.8s ease;
+
+                // max-width: 575px;
+                @include xs-screen{
+                    font-size: 0.5em;
+                };
+                                
+                // min-width: 768px;
+                @include md-screen{
+                    font-size: 0.6em;
+                };
+
+                // min-width: 992px;
+                @include lg-screen{
+                    font-size: 0.7em;
+                };
+                    &:hover{
+                        background: $beta;
+                    }
+                    &:focus{
+                        box-shadow: none;
+                    }
+            }
+        }
+        .btn__three{
+            display: inline-block;
+            margin: 0 1em 0 0.3em;
+            a{  
+                color: $text;
+                background: $zeta;
+                border-radius: 0;
+                padding: 0.3em 1em;
+                margin: 0 0;
+                font-size: 0.7em;
+                letter-spacing: 1px;
+                transform: skewX(-12deg);
+                transition: all 0.8s ease;
+
+                // max-width: 575px;
+                @include xs-screen{
+                    font-size: 0.5em;
+                };
+                
+                // min-width: 768px;
+                @include md-screen{
+                    font-size: 0.6em;
+                };
+
+                // min-width: 992px;
+                @include lg-screen{
+                    font-size: 0.7em;
+                };
+                    &:hover{
+                        background: $eta;
+                    }
+                    &:focus{
+                        box-shadow: none;
+                    }
+            }
+        }
+    }
+}

@@ -1,0 +1,180 @@
+@import '../01-base/01-base';
+
+.other{
+    margin: 8rem 0 0 0;
+    &__header{
+        margin: 0 0 -8px -4px;
+        width: 10rem;
+        text-align: center;
+        transform: skewX(10deg);
+            h3{
+                font-family: $heading-font;
+                color:$white;
+                background: $zeta;
+                padding: 0.3em 0em;
+
+                // max-width: 575px;
+                @include xs-screen{
+                    font-size: 1em;
+                };
+            }
+
+        // max-width: 575px;
+        @include xs-screen{
+            width: 6rem;
+        };
+    }
+    &__border{
+        border-bottom: 1px solid rgba(217, 217, 217, 0.4);
+    }
+    &__details{
+        margin: 0 0;
+        padding: 0 0;
+            &:hover .title{
+                transition: all 0.4s ease;
+                color: $primary;
+            }
+    }
+    .title{
+        text-decoration: none;
+        color: $secondary;
+        font-family: $heading-font;
+        font-size: 2rem;
+        margin: 0.5rem 0;
+        transition: all 0.4s ease;
+
+        // max-width: 575px;
+        @include xs-screen{
+            font-size: 1.5rem;
+        };
+
+        // min-width: 568px;
+        @include iphn-screen{
+            font-size: 2rem;
+        };
+
+        // min-width: 768px;
+        @include md-screen{
+            font-size: 1.6rem;
+        };
+
+        // min-width: 1200px;
+        @include xl-screen{
+            font-size: 2rem;
+        };
+
+    }
+    &__small{
+        a{
+            text-decoration: none;
+            color: $black;
+        }
+    }
+    .button{
+        margin: 0 0;
+            &__one{
+                margin: 0 1em 0 0;
+                color: $white;
+                background: $alpha;
+                border-radius: 0;
+                padding: 0.2em 0.5em 0.3em 0.5em;
+                font-size: 0.7em;
+                letter-spacing: 1px;
+                transform: skewX(-12deg);
+                transition: all 0.8s ease;
+
+                // min-width: 768px;
+                @include md-screen{
+                    margin: 0 1.3rem 0 0;
+                };
+                &:hover{
+                    transition: all 0.8s ease;
+                    background: $gamma;
+                }
+                &:focus{
+                    outline: none;
+                    box-shadow: none;
+                }
+            }
+            &__two{
+                margin: 0 1em 0 0;
+                color: $white;
+                background: $zeta;
+                border-radius: 0;
+                padding: 0.2em 0.5em 0.3em 0.5em;
+                font-size: 0.7em;
+                letter-spacing: 1px;
+                transform: skewX(-12deg);
+                transition: all 0.8s ease;
+
+                // min-width: 768px;
+                @include md-screen{
+                    margin: 0 1.3rem 0 0;
+                };
+                &:hover{
+                    transition: all 0.8s ease;
+                    background: $beta;
+                }
+                &:focus{
+                    outline: none;
+                    box-shadow: none;
+                }
+            }
+            &__three{
+                margin: 0 1em 0 0;
+                color: $white;
+                background: $beta;
+                border-radius: 0;
+                padding: 0.2em 0.5em 0.3em 0.5em;
+                font-size: 0.7em;
+                letter-spacing: 1px;
+                transform: skewX(-12deg);
+                transition: all 0.8s ease;
+
+                // min-width: 768px;
+                @include md-screen{
+                    margin: 0 1.3rem 0 0;
+                };
+                &:hover{
+                    transition: all 0.8s ease;
+                    background: $eta;
+                }
+                &:focus{
+                    outline: none;
+                    box-shadow: none;
+                }
+            }
+            &__four{
+                margin: 0 1em 0 0;
+                color: $white;
+                background: $eta;
+                border-radius: 0;
+                padding: 0.2em 0.5em 0.3em 0.5em;
+                font-size: 0.7em;
+                letter-spacing: 1px;
+                transform: skewX(-12deg);
+                transition: all 0.8s ease;
+
+                // min-width: 768px;
+                @include md-screen{
+                    margin: 0 1.3rem 0 0;
+                };
+                &:hover{
+                    transition: all 0.8s ease;
+                    background: $zeta;
+                }
+                &:focus{
+                    outline: none;
+                    box-shadow: none;
+                }
+            }
+    }
+    .adds-title{
+        font-size: 1rem;
+        text-decoration: none;
+
+    }
+    .other-p{
+        padding: 1rem 1rem 0 1rem;
+    }
+}

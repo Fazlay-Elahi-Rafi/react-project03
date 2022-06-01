@@ -1,0 +1,205 @@
+@import "../01-base/01-base";
+
+//All img
+@import "./recentNews-img";
+
+// All Button
+@import "./recentNews-btns";
+
+.recent {
+  margin: 0 0 5em 0;
+  overflow: hidden;
+  &__header {
+    margin: 0 0 -8px -4px;
+    width: 12em;
+    text-align: center;
+    transform: skewX(10deg);
+    h3 {
+      font-family: $heading-font;
+      color: $white;
+      background: $zeta;
+      padding: 0.3em 0em;
+
+      // max-width: 575px;
+      @include xs-screen {
+        font-size: 1em;
+      }
+    }
+
+    // max-width: 575px;
+    @include xs-screen {
+      width: 6em;
+    }
+  }
+  &__border {
+    border-bottom: 1px solid rgba(217, 217, 217, 0.4);
+  }
+  .card-img-overlay {
+    background: linear-gradient(transparent, $black);
+    border-radius: 0;
+
+    // max-width: 575px;
+    @include xs-screen {
+      margin: 2em 0 0 0;
+    }
+
+    // min-width: 568px;
+    @include iphn-screen {
+      margin: 3em 0 0 0;
+    }
+
+    // min-width: 768px;
+    @include md-screen {
+      margin: 7em 0 0 0;
+    }
+
+    // min-width: 992px;
+    @include lg-screen {
+      margin: 14em 0 0 0;
+    }
+  }
+  &__text {
+    margin: 9em 0 0.5em 0;
+    span {
+      cursor: pointer;
+      text-transform: capitalize;
+      font-size: 0.7em;
+      color: $white;
+    }
+    &-link {
+      text-decoration: none !important;
+      color: $white !important;
+      font-family: $heading-font;
+      font-size: 1.3em;
+
+      // max-width: 575px;
+      @include xs-screen {
+        font-size: 1.2em;
+      }
+
+      // min-width: 568px;
+      @include iphn-screen {
+        font-size: 1.3em;
+      }
+
+      // min-width: 992px;
+      @include lg-screen {
+        font-size: 1.5em;
+      }
+
+      // min-width: 1200px;
+      @include xl-screen {
+        font-size: 1.8em;
+      }
+    }
+  }
+  &__body {
+    &-title {
+      display: inline;
+      color: $secondary;
+      text-decoration: none !important;
+      font-size: 1.3em;
+      font-family: $heading-font;
+
+      // max-width: 575px;
+      @include xs-screen {
+        font-size: 0.8em;
+      }
+
+      // min-width: 568px;
+      @include iphn-screen {
+        font-size: 1.3em;
+      }
+
+      // min-width: 768px;
+      @include md-screen {
+        font-size: 1em;
+      }
+
+      // min-width: 992px;
+      @include lg-screen {
+        font-size: 1.3em;
+      }
+    }
+    .date_time {
+      display: inline-block;
+      font-size: 0.8em;
+
+      // max-width: 575px;
+      @include xs-screen {
+        font-size: 0.6em;
+        margin: 0 0 0 -9px;
+      }
+
+      // min-width: 768px;
+      @include md-screen {
+        font-size: 0.7em;
+        margin: 0 0 0 -7px;
+      }
+
+      // min-width: 992px;
+      @include lg-screen {
+        font-size: 0.8em;
+        margin: 0 0;
+      }
+    }
+  }
+  .slick-dots {
+    // max-width: 320px;
+    @include xxs-screen {
+      left: 59% !important;
+    }
+
+    // max-width: 575px;
+    @include xs-screen {
+      position: relative;
+      top: -2em;
+      width: 7em;
+      left: 66%;
+    }
+
+    // min-width: 568px;
+    @include iphn-screen {
+      position: relative;
+      top: -2.5em;
+      width: 7em;
+      left: 76%;
+    }
+
+    // min-width: 768px;
+    @include md-screen {
+      top: -2em;
+      left: 64%;
+    }
+
+    // min-width: 992px;
+    @include lg-screen {
+      top: -2.5em;
+      left: 72%;
+    }
+    li {
+      margin: 0em 0 0 1em;
+      &.slick-active {
+        button {
+          border-bottom: 1px solid rgba($primary, 0.5);
+          &::before {
+            color: transparent !important;
+          }
+        }
+      }
+      button {
+        font-size: 1em;
+        border-bottom: 1px solid rgba($white, 0.5);
+        color: $white;
+        padding: 0 0 0.5em 0;
+        &::before {
+          color: transparent !important;
+        }
+      }
+    }
+  }
+
+  .card {
+    border: none;
+  }
+}
